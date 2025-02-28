@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "convCSDtoASD_behav" "xil_defaultlib.convCSDtoASD" "xil_defaultlib.glbl" -log "elaborate.log" 
