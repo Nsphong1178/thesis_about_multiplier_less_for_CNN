@@ -22,16 +22,20 @@
 
 module convolution(
     input [3:0] M, N, n,
-    input clk, reset, start,
-    input re_kernel, re_matrix, we_kernel, we_matrix, re_out, we_out,
-    input [15:0] data_in_matrix
+    input clk, reset, start, done,
+    input we_kernel, we_matrix, re_out,
+    input [15:0] data_in_matrix, data_in_kernel
 
     );
+
+    wire [3:0] i, j ,k;
+    wire load_i, load_j, load_k;
+
     counter cnt_i(
         .clk(clk),
         .reset(reset),
         .enable(enable_i),
-        .Load(load),
+        .Load(load_i),
         .count(i)
     );
 
@@ -39,7 +43,7 @@ module convolution(
         .clk(clk),
         .reset(reset),
         .enable(enable_j),
-        .Load(load),
+        .Load(load_j),
         .count(j)
     );
 
@@ -47,15 +51,15 @@ module convolution(
         .clk(clk),
         .reset(reset),
         .enable(enable_k),
-        .Load(load),
+        .Load(load_k),
         .count(k)
     );
 
 
 
-    assign Z_i < (M-n) ? 1'b1 : 1'b0;
-    assign Z_j < (N-n) ? 1'b1 : 1'b0;
-    assign Z_k < (k < 3'h8) ? 1'b1 : 1'b0;
+    assign Z_i = (i < (M-n)) ? 1'b1 : 1'b0;
+    assign Z_j = (j < (N-n)) ? 1'b1 : 1'b0;
+    assign Z_k = (k < 3'h8) ? 1'b1 : 1'b0;
 
     memory matrix(
         .clk(clk),
@@ -89,6 +93,8 @@ module convolution(
                           (k == 6) ? (j + 2)*M + i + 1:
                           (k == 7) ? (j + 2)*M + i + 2:
                           (k == 8) ? (j + 2)*M + i + 3: 0;
+
+    wire en_bit0, en_bit1, en_bit2, en_bit3, en_bit4, en_bit5, en_bit6, en_bit7, en_bit8;
     
     assign en_bit0 = (k == 0) ? 1'b1 : 1'b0;
     assign en_bit1 = (k == 1) ? 1'b1 : 1'b0;
@@ -123,6 +129,7 @@ module convolution(
     wire[3:0] s00, s01, s10, s11, s20, s21, s30, s31, s40, s41, s50, s51, s60, s61, s70, s71, s80, s81;
     wire[1:0] v00, v01, v10, v11, v20, v21, v30, v31, v40, v41, v50, v51, v60, v61, v70, v71, v80, v81;
     wire [3:0] dif0, dif1, dif2, dif3, dif4, dif5, dif6, dif7, dif8;
+
     assign dif0 = (k0[4:3] == 2'b00) ? 4'h2: (k0[4:3] == 2'b01) ? 4'h3:  (k0[4:3] == 2'b10) ? 4'h4: (k0[4:3] == 2'b11) ? 4'h5: 4'h0;
     assign dif1 = (k1[4:3] == 2'b00) ? 4'h2: (k1[4:3] == 2'b01) ? 4'h3:  (k1[4:3] == 2'b10) ? 4'h4: (k1[4:3] == 2'b11) ? 4'h5: 4'h0;
     assign dif2 = (k2[4:3] == 2'b00) ? 4'h2: (k2[4:3] == 2'b01) ? 4'h3:  (k2[4:3] == 2'b10) ? 4'h4: (k2[4:3] == 2'b11) ? 4'h5: 4'h0;
@@ -197,6 +204,15 @@ module convolution(
     assign v81 = (k8[2:0] == 3'b011 || k8[2:0] == 3'b111) ? 2'b10 : 
                  (k8[2:0] == 3'b010 || k8[2:0] == 3'b110) ? 2'b01 : 2'b00;
 
+    wire [15:0] b00, b01, b10, b11, b20, b21, b30, b31, b40, b41, b50, b51;
+    wire [15:0] sum_10, carry_10, sum_11, carry_11, sum_12, carry_12, sum_13, carry_13;
+    wire [15:0] sum_14, carry_14, sum_15, carry_15;
+    wire [15:0] sum_20, carry_20, sum_21, carry_21, sum_22, carry_22, sum_23, carry_23;
+    wire [15:0] sum_30, carry_30, sum_31, carry_31, sum_32, carry_32;
+    wire [15:0] sum_40, carry_40, sum_41, carry_41;
+    wire [15:0] sum_50, carry_50;
+    wire [15:0] sum_60, carry_60;
+
     carry_save_adder_signed csa_10(.A(b00), .B(b01), .C(0), .Sum(sum_10), .Carry_Out(carry_10));
     carry_save_adder_signed csa_11(.A(b10), .B(b11), .C(0), .Sum(sum_11), .Carry_Out(carry_11));
     carry_save_adder_signed csa_12(.A(b20), .B(b21), .C(0), .Sum(sum_12), .Carry_Out(carry_12));
@@ -231,5 +247,57 @@ module convolution(
         .dataIn(final_sum),
         .dataOut(data_out)
     );
+
+    reg [4:0] state;
+
+    always @(posedge clk or posedge reset) begin
+        if(reset) begin
+            state <= 5'd0;
+        end else begin
+            case(state)
+            5'd0: state <= 5'd1;
+            5'd1: begin
+                if (start)
+                    state <= 5'd2;
+                else 
+                    state <= 5'd0;
+            end
+            5'd2: state <= 5'd3; 
+
+            5'd3: begin
+                if (start)
+                    state <= 5'd4;
+                else 
+                    state <= 5'd10;
+            end
+            5'd4: begin
+                if (start)
+                    state <= 5'd5;
+                else 
+                    state <= 5'd9;
+            end
+            5'd5: begin
+                if (start)
+                    state <= 5'd6;
+                else 
+                    state <= 5'd8;
+            end
+            5'd6: state <= 5'd7;
+            5'd8: state <= 5'd4;
+            5'd9: state <= 5'd3;
+            default: state <= 5'd0;
+        endcase
+        end
+    end
+
+always @(*) begin
+    load_i = (state == 5'd2) ? 1'b1: 1'b0;
+    load_j = (state == 5'd2 || state == 5'd9) ? 1'b1: 1'b0;
+    load_k = (state == 5'd2 || state == 5'd8) ? 1'b1: 1'b0;
+    re_matrix = (state == 5'd6) ? 1'b1: 1'b0;
+    re_kernel = (state == 5'd6) ? 1'b1: 1'b0;
+    we_out = (state == 5'd7) ? 1'b1: 1'b0;
+end
+
 
 endmodule
