@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
   <diagram name="Trang-1" id="ZTEf5k2u-yT7QT4qtRUc">
-    <mxGraphModel dx="2964" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2001" dy="1371" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3411,6 +3411,33 @@
         </mxCell>
         <mxCell id="n5akObrAyf3s3qir8JeV-281" value="reset" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="865" y="1858.75" width="25" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-282" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-283" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-284" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-285" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-286" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-287" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-288" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-289" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="2240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-290" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
