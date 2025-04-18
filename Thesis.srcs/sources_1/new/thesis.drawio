@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
   <diagram name="Trang-1" id="ZTEf5k2u-yT7QT4qtRUc">
-    <mxGraphModel dx="2145" dy="1455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2328" dy="1561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3412,31 +3412,31 @@
         <mxCell id="n5akObrAyf3s3qir8JeV-281" value="reset" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="865" y="1858.75" width="25" height="15" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-282" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-282" value="8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="640" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-283" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-283" value="7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="670" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-284" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-284" value="6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="700" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-285" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-285" value="5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="730" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-286" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-286" value="4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="760" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-287" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-287" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="790" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-288" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-288" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="820" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-289" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-289" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="850" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-290" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n5akObrAyf3s3qir8JeV-290" value="0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=light-dark(#000000, #5c79a3);" vertex="1" parent="1">
           <mxGeometry x="880" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n5akObrAyf3s3qir8JeV-291" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;direction=north;" vertex="1" parent="1">
@@ -3448,11 +3448,14 @@
         <mxCell id="n5akObrAyf3s3qir8JeV-293" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;direction=north;" vertex="1" parent="1">
           <mxGeometry x="832.5" y="2277" width="67.5" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-294" value="Chỉ số của chữ số khác 0 đầu tiên" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="639" y="2292" width="120" height="30" as="geometry" />
+        <mxCell id="n5akObrAyf3s3qir8JeV-294" value="Chỉ số của chữ số khác 0 đầu tiên" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="649" y="2287" width="101" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="n5akObrAyf3s3qir8JeV-295" value="Hiệu chỉ số giữa 2 bit khác 0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="745" y="2292" width="120" height="30" as="geometry" />
+        <mxCell id="n5akObrAyf3s3qir8JeV-295" value="Hiệu chỉ số giữa 2 chữ số khác 0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="754" y="2287" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-296" value="Cặp giá trị khác không" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="832.5" y="2287" width="75" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
