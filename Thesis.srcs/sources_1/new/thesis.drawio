@@ -3448,6 +3448,12 @@
         <mxCell id="n5akObrAyf3s3qir8JeV-293" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;direction=north;" vertex="1" parent="1">
           <mxGeometry x="832.5" y="2277" width="67.5" height="10" as="geometry" />
         </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-294" value="Chỉ số của chữ số khác 0 đầu tiên" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="639" y="2292" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n5akObrAyf3s3qir8JeV-295" value="Hiệu chỉ số giữa 2 bit khác 0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="745" y="2292" width="120" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
